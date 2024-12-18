@@ -15,12 +15,11 @@ export function activate(context: vscode.ExtensionContext) {
     }
 
     const filePath = editor.document.uri.fsPath;
-    const scriptPath = '~/.vscode/scripts/types.mjs';
 
     try {
         // Запускаем скрипт
         const { stdout, stderr } = await execPromise(
-            `node ${scriptPath} "${filePath}"`
+            `node ~/.vscode/scripts/types.mjs "${filePath}"`
         );
 
         if (stderr) {
