@@ -3,7 +3,7 @@
   "name": "run-script-relative-to-open-file",
   "displayName": "Run Script Relative to Open File",
   "description": "Executes a script relative to the open file",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "engines": {
     "vscode": "^1.95.0"
   },
